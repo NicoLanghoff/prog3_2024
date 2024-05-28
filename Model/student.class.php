@@ -15,17 +15,17 @@ class Student{
     private $student=null;
     private $conexion=null;
 
-    public function __construct($dni, $surname, $name, $birthday, $phone, $address,$email, $password, $school){
-        $this->dni=$dni;
-        $this->surname=$surname;
-        $this->name=$name;
-        $this->birthday=$birthaday;
-        $this->phone=$phone;
-        $this->address=$address;
-        $this->email=$email;
-        $this->password=$password;
-        $this->school=$school;
-    }
+    // public function __construct($dni, $surname, $name, $birthday, $phone, $address,$email, $password, $school){
+    //     $this->dni=$dni;
+    //     $this->surname=$surname;
+    //     $this->name=$name;
+    //     $this->birthday=$birthaday;
+    //     $this->phone=$phone;
+    //     $this->address=$address;
+    //     $this->email=$email;
+    //     $this->password=$password;
+    //     $this->school=$school;
+    // }
 
     public function addStudent(){
         //crear consulta
@@ -91,4 +91,74 @@ class Student{
         $this->idStudent=$idStudent;
     } 
     //repetir lo mismo en todas las variables 
+    public function getDni(){
+        return $this->dni;
+    }
+
+    public function setDni($dni){
+        $this->dni=$dni;
+    } 
+    public function getSurname(){
+        return $this->surname;
+    }
+
+    public function setSurname($surname){
+        $this->surname=$surname;
+    } 
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setName($name){
+        $this->name=$name;
+    } 
+  
+    public function getBirthday(){
+        return $this->birthday;
+    }
+
+    public function setBirthday($birthday){
+        $this->birthday=$birthday;
+    }  
+
+      public function getPhone(){
+        return $this->phone;
+    }
+
+    public function setPhone($phone){
+        $this->phone=$phone;
+    }
+
+    public function getAddress(){
+        return $this->address;
+    }
+
+    public function setAddress($address){
+        $this->address=$address;
+    }
+
+    public function getEmail(){
+        return $this->email;
+    }
+
+    public function setEmail($email){
+        $this->email=$email;
+    }
+
+    public function getPassword(){
+        return $this->password;
+    }
+
+    public function setPassword($password){
+        $this->password=$password;
+    }
+
+    public function getSchool(){
+        return $this->school;
+    }
+
+    public function setSchool($school){
+        $this->school=$school;
+    }
 }

@@ -4,7 +4,7 @@ class Database{
     private $nombre="db_school";
     private $servidor="localhost";
     private $usuario="root";
-    private $clave="#Promo2024";
+    private $clave="";
 
     //Conectar la base de datos
     public function connectDB(){
