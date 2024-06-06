@@ -33,7 +33,7 @@ class Student{
         
         $this->conexion=new Database();
         $result= $this->conexion->query($sql);
-        $this->conexion->close();
+        //$this->conexion->close();
         return $result;
     }
 
@@ -42,7 +42,7 @@ class Student{
         
         $this->conexion=new Database();
         $result= $this->conexion->query($sql);
-        $this->conexion->close();
+        //$this->conexion->close();
         return $result;
 
     }
@@ -51,7 +51,7 @@ class Student{
         $sql="DELETE FROM students WHERE idStudents=".$this->idStudent." ";
         $this->conexion=new Database();
         $result= $this->conexion->query($sql);
-        $this->conexion->close();
+      //  $this->conexion->close();
         return $result;
     }
 
@@ -59,7 +59,7 @@ class Student{
         $sql="SELECT * FROM students WHERE idStudents=".$this->idStudent." ";
         $this->conexion=new Database();
         $result= $this->conexion->query($sql);
-        $this->conexion->close();
+        //$this->conexion->close();
         if($result){
             if($row=$result->fetch_assoc()){
                 $this->dni=$row("dni");
